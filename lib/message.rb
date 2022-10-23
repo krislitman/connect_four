@@ -11,6 +11,10 @@ class Message
 
   class << self
 
+    def clear
+      system("clear")
+    end
+
     def stats(player)
       time = convert_seconds_to_hms(player.total_time)
       name = player.name.titleize
@@ -29,7 +33,9 @@ class Message
     end
 
     def move
+      clear
       puts "Make a move! (A-G) \n".magenta
+      puts "Player: X\tComputer: O\n".magenta
     end
 
     def welcome
