@@ -21,7 +21,7 @@ class Message
     end
 
     def player_name
-      puts "Please enter your name! (A-G) \n".magenta
+      puts "Please enter your name!\n".magenta
     end
 
     def turn_board_display(board)
