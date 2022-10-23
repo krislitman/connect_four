@@ -1,0 +1,17 @@
+AllCops:
+  Excludes:
+
+# Customize rules
+Metrics/LineLength:
+  Max: 95
+
+MethodLength:
+  Max: 35
+
+Metrics/AbcSize:
+   Enabled: false
+
+BlockLength:
+  Max: 70
+
+# rubocop --only Lint
